@@ -7,6 +7,10 @@ async function zusulT1(){
 const data=await fetch(url)
 const javob=await data.json();
 const Text=serch.value.toUpperCase().trim()
+if(Text==""){
+    rel.textContent="Iltimos nom kiriting"
+}
+
 const top=javob.find(x=>x.Ccy===Text);
 const natija=`1 ${top.CcyNm_UZ} ~ ${top.Rate} so'm sana:${top.Date}`
 rel.textContent=natija
