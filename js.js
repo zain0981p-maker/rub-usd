@@ -16,6 +16,12 @@ const natija=`1 ${top.CcyNm_UZ} ~ ${top.Rate} so'm sana:${top.Date}`
 rel.textContent=natija
 }
 
-serch.addEventListener("input",()=>zusulT1())
+// serch.addEventListener("input",()=>zusulT1())
+serch.addEventListener("keypress",(e)=>{
+    if(e.key==="Enter"){
+        zusulT1()
+    }
+
+})
 
 // btn.addEventListener("click",()=>zusulT1())
